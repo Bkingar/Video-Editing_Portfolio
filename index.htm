@@ -764,10 +764,18 @@ body.pause-cursor {
       position: fixed;
       top: 1rem;
       right: 1rem;
+      z-index: 100; /* 👈 Make sure it’s above nav (which is 10) */
       display: flex;
       align-items: center;
       justify-content: center;
     }
+
+  @media (max-width: 600px) {
+  .toggle-wrapper {
+    top: 60px; /* Push it below the sticky nav bar */
+    right: 12px;
+  }
+}
 
     .theme-slider {
       position: relative;
