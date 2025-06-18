@@ -410,12 +410,15 @@ body.dark .work-carousel::after {
 
 @media (max-width: 768px) {
   .video-card {
-    flex: 0 0 80vw;
-    width: 80vw;
-    max-width: 80vw;
+    width: 72vw;               /* ~20% smaller than 90vw */
+    max-width: 72vw;
+    flex: 0 0 72vw;
     height: auto;
-    aspect-ratio: auto; /* or leave to be overridden per category */
+    aspect-ratio: auto;
+    transform: scale(0.95);    /* Slight visual scale for premium feel */
+    transition: transform 0.3s ease;
   }
+
 
 
 .carousel-nav {
