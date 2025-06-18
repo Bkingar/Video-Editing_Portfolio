@@ -126,10 +126,12 @@ body.transitioning .subnav {
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: center;
-    gap: 12px;
+    gap: 8px;
     padding: 8px 12px;
     border-radius: 12px;
     scrollbar-width: none; /* Firefox */
+     width: 100vw;            /* Full width of screen */
+    
   }
 
   nav::-webkit-scrollbar,
@@ -139,9 +141,12 @@ body.transitioning .subnav {
 
   nav button, .subnav button {
     font-size: clamp(0.85rem, 2vw, 1rem);
-    padding: 6px 12px;
+    padding: 6px 10px;
     white-space: nowrap;
-    flex-shrink: 0; /* Prevents buttons from shrinking */
+   /* flex-shrink: 0; /* Prevents buttons from shrinking */
+     flex: 1 1 auto;
+    min-width: 90px;
+  
   }
 }
 
