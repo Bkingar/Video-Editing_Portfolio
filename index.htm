@@ -400,6 +400,17 @@ body.dark .work-carousel::after {
   }
 }
 
+      @media (max-width: 768px) {
+  .video-card {
+    width: 40vw;               /* ~20% smaller than 90vw */
+    max-width: 40vw;
+    flex: 0 0 40vw;
+    height: auto;
+    aspect-ratio: auto;
+    transform: scale(0.8);    /* Slight visual scale for premium feel */
+    transition: transform 0.3s ease;
+  }
+
 .carousel-spacer {
   flex: 0 0 33.33%;
   max-width: 33.33%;
